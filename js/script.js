@@ -23,10 +23,10 @@ function determineWinner(m, u){
         alert ("Empate");
     }else{
         if(u=="piedra" && m=="tijera" || u== "tijera" && m== "papel" || u=="papel" && m == "piedra"){
-            alert("El ganador es Usuario");
+            alert("Ganaste!");
         }
         else{
-            alert("El ganador es Maquina");
+            alert("Perdiste :( .El ganador es la Maquina");
         }
     }
     
@@ -36,6 +36,8 @@ let user=getUserChoice();
 
 let maquinaChoice=getRandomInt(3);
 let maquina=getMaquinaChoice(maquinaChoice);
+
+alert("La maquina tira: "+ maquina);
 
 
 determineWinner(maquina,user);
