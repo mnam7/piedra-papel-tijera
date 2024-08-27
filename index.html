@@ -3,13 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    
+    <title>Piedra Papel o Tijera</title>
+
+
 </head>
 <body>
-    <h1>Piedra-Papel-Tijera</h1>
-
-
-
+    <header>
+   
+    </header>
+    <main>
+        <section>
+            <h1 class="title">Piedra-Papel-Tijera</h1>  
+        </section>
+        <section class="containerFlex">
+            <button class="btn" id="instrucciones" onclick="mostrarInstruccion()">Instrucciones</button>
+            <button class="btn" id="playerVsCPU" onclick="jugarPlayerCPU()">Jugador vs Maquina</button>
+            <button class= "btn" id="playerVsplayer" onclick="jugarPlayerPlayer()"> Jugador 1 vs Jugador 2 </button> 
+            <button class="btn" id="rank" onclick="mostrarRanking()">Ranking</button> 
+        </section>
+        <section>
+            <div class="label-txt-container" id="playerSetup">
+                <p class="label-txt">Nombre de Jugador:</p>
+                <input class="textfield-style"type="text" id="playerName" placeholder="Ingresa tu nombre">
+                <button class="btn-iniciar" onclick="startGame()">Iniciar Juego</button>
+            </div>
+            <div id="multiplayerSetup" style="display: none;">
+                <p>Nombre de Jugador 1:</p>
+                <input type="text" id="playerName" placeholder="Ingresa nombre Jugador 1">
+                <p>Nombre de Jugador 2 :</p>
+                <input type="text" id="playerName2" placeholder="Ingresa nombre Jugador 2">
+                <button onclick="startGame()">Iniciar Juego</button>
+            </div>
+            <div id="textInstruccion"></div>
+        </section>
+        <section>
+            <div class="puntuacion-style" id="puntuacion"> <!--aca hay que poner la puntuacion--></div>
+            <div id="gameArea" class="imagen-container">
+              <!-- <img id="pptimagen" class="img-ppt" src="" alt="piedra-papel-tijera"/>--> 
+            </div>
+            <div class="btn-result-container" id="result">
+                <button class="btn" id="reiniciar" onclick="reiniciar()">Volver a Jugar</button>
+            </div>
+        </section>
+    </main>    
     <script src='./js/script.js'></script>
 </body>
 </html>
