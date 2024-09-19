@@ -33,6 +33,23 @@ body{
     
 }
 
+.btn:disabled {
+        background-color: gray;
+        color: darkgray;
+        cursor: not-allowed;
+}
+
+.btn-salir{
+        margin-top:30px;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        font-family: "Bangers", system-ui; 
+}
 .btn-iniciar{
     margin-top:10px;
     padding: 10px 20px;
@@ -53,15 +70,19 @@ body{
     align-items: center;
 }
 
+.instruccion-style{
+    text-align: center;
+    margin-top: 100px;
+}
+
 
 .label-txt-container{
     text-align: center;
+    margin-top: 100px;
 }
-.label-txt{
-    margin-top: 70px;
-    margin-right: 350px;
 
-}
+
+
 .textfield-style{
     border-radius: 4px;
     padding: 10px;
@@ -80,4 +101,31 @@ body{
 .puntuacion-style{
     margin-top: 50px;
     text-align: center;
+}
+
+.table-container{
+    padding: 20px;
+    margin-left: 450px;
+   
+}
+
+.table-style{
+    padding: 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkorange;
+    color: white;
+    font-family: "Press Start 2P", system-ui; 
+    text-align: center;
+}
+
+.table-style thead th {
+    color: #333;
+    border-bottom: 1px solid white;
+}
+
+.table-style th, .table-style td {
+    padding: 10px 12px;
+    
 }
